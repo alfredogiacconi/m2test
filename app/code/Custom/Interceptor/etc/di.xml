@@ -3,4 +3,22 @@
         <type name="Magento\Catalog\Model\Product">
             <plugin name="CustomInterceptor" type="Custom\Interceptor\Plugin\Controller\DoubleProductPrice" sortOrder="1" disabled="false"/>
         </type>
+        <type name="Custom\Interceptor\Logger\Handler">
+            <arguments>
+                <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+            </arguments>
+        </type>
+        <type name="Custom\Interceptor\Logger\Logger">
+            <arguments>
+                <argument name="name" xsi:type="string">Custom_Interceptor</argument>
+                <argument name="handlers" xsi:type="array">
+                    <item name="system" xsi:type="object">Custom\Interceptor\Logger\Handler</item>
+                </argument>
+            </arguments>
+        </type>
+        <type name="Custom\Interceptor\Controller\Index\Index">
+            <arguments>
+                <argument name="logger" xsi:type="object">Custom\Interceptor\Logger\Logger</argument>
+            </arguments>
+        </type>
     </config>
