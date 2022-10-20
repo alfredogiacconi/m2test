@@ -10,13 +10,13 @@
         </type>
         <type name="Custom\Interceptor\Logger\Logger">
             <arguments>
-                <argument name="name" xsi:type="string">Custom_Interceptor</argument>
+                <argument name="name" xsi:type="string">CustomLogger</argument>
                 <argument name="handlers" xsi:type="array">
                     <item name="system" xsi:type="object">Custom\Interceptor\Logger\Handler</item>
                 </argument>
             </arguments>
         </type>
-        <type name="Custom\Interceptor\Controller\Index\Index">
+        <type name="Custom\Interceptor\Controller\Index\CustomLogger">
             <arguments>
                 <argument name="logger" xsi:type="object">Custom\Interceptor\Logger\Logger</argument>
             </arguments>

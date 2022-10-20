@@ -11,7 +11,7 @@ class Handler extends BaseHandler
      * Logging level
      * @var int
      */
-    protected $loggerType = MonologLogger::NOTICE;
+    protected $loggerType = MonologLogger::INFO;
 
     /**
      * File name
