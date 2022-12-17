@@ -4,8 +4,8 @@
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/lorem-logo.svg</argument>
-                <argument name="logo_width" xsi:type="number">300</argument>
-                <argument name="logo_height" xsi:type="number">300</argument>
+                <argument name="logo_width" xsi:type="number">250</argument>
+                <argument name="logo_height" xsi:type="number">250</argument>
                 <argument name="logo_alt" xsi:type="string">lorem-lorem</argument>
             </arguments>
         </referenceBlock>
